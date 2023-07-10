@@ -1,6 +1,8 @@
-# Freehand Annotation Extractor
+# InkExtrakt
 When reading PDFs on my mobile or tablet, I often find myself wanting to highlight specific words or sections that capture my attention. I want to do it quickly so as not to break my flow, So I use free hand annotation to underline these words. Unfortunately, I found out that these hand-drawn highlights tend to get lost easily, making it worthless to take notes in the first place. So I'm trying to solve this problem with this application.
 
+![input example](/images/jselequentshowcaseinput.png)
+![output example](/images/jselequentshowcaseoutput.png)
 ## Features 
 - extract words that are underlined using free hand highlighter into organized file.
 
@@ -52,7 +54,7 @@ class AnnotationExtractor:
         self.doc = doc
         self.line_height = 20 # put your value here
 ```
-- In the future I may consider this usecase
+- In the future I may consider this usecase ![](images/circle.png)
 ## Contributing
 
 I really appreciate your feedback. I don't even know if this problem is related to someone else or it's just me. 

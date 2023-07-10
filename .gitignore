@@ -1,7 +1,6 @@
 # Directories
 .vscode/
 Annots*
-images/
 __pycache__/
 
 # Files
