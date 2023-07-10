@@ -1,0 +1,11 @@
+# Directories
+.vscode/
+Annots*
+images/
+__pycache__/
+
+# Files
+poetry.lock
+
+*.pdf
+_main.py

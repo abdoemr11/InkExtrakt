@@ -28,7 +28,8 @@ class AnnotationWriter:
     def write_extracted_annotations(self, annot_doc, annotations):
         for annotation in annotations:
             annot_doc.write(f"- {annotation['type']}")
-            annot_doc.write(f"\t&mdash;*({annotation['page_number']})*\n")
+            annot_doc.write(
+                f"\t&mdash;*Page({annotation['page_number']})*\n\n")
 
             extracted_text = ' '.join(annotation['text'])
             annot_doc.write(f"{extracted_text}\n")

@@ -33,9 +33,10 @@ class AnnotationExtractor:
             if len(point) >= 2:
                 first_point = min(point, key=lambda p: p[0])
                 last_point = max(point, key=lambda p: p[0])
+                max_y = max(point, key=lambda p: p[1])
                 x0, y0 = first_point[:2]
                 x1, y1 = last_point[:2]
-                line_rect = fitz.Rect(x0, y0, x1, y1)
+                line_rect = fitz.Rect(x0, max_y[1], x1, max_y[1])
 
                 text_above_line = self.get_text_above_line(wordlist, line_rect)
                 extracted_text.extend(text_above_line)
