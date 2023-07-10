@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pdfextractor"
+version = "0.1.0"
+description = "experimenting with extracting annotation from pdf"
+authors = ["abdoemr11 <abdoemr11@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fritz = "^2.3.5"
+fitz = "^0.0.1.dev2"
+pymupdf = "^1.22.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
